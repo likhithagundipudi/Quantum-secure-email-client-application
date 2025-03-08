@@ -1,0 +1,17 @@
+create database SecureEmail;
+use SecureEmail;
+
+create table user_signup(username varchar(50) primary key,
+password varchar(50),
+phone_no varchar(50),
+email varchar(50),
+address varchar(50));
+
+create table emails(mail_id int primary key,
+sender_name varchar(50),
+receiver_name varchar(50),
+send_date varchar(150),
+subject varchar(150),
+attached_file varchar(50));
+
+
